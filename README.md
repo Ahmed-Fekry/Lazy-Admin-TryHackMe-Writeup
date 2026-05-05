@@ -63,7 +63,7 @@ http://<target-ip>/content/
 
 ## 🔐 Step 3: Find Credentials
 
-Further enumeration reveals a MySQL backup directory:
+Further enumeration on /content using gobuster reveals a MySQL backup directory:
 
 ```
 /content/inc/mysql_backup
@@ -82,7 +82,7 @@ admin: manager
 passwd: 42f749ade7f9e195bf475f37a44cafcb
 ```
 
-> Password is **MD5** → cracked to: `Password123`
+> Password is **MD5** hash → cracked to: `Password123`
 
 ---
 
